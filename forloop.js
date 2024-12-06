@@ -29,12 +29,9 @@ for (let i = 0; i <= 100; i = i + 1) {
     console.log(i + `fizz`);
   }
 }
-
 // Exercise 3
-
 // Get the sum of two arrays…actually the sum of all their elements.
 // P.S. Each array includes only integer numbers. Output is a number too.
-
 // let arr_1 = [3, 5, 22, 5,  7,  2,  45, 75, 89, 21, 2]; // --> 276
 // let arr_2 = [9, 2, 42, 55, 71, 22, 4,  5,  90, 25, 26]; // --> 351
 // Example output:
@@ -43,7 +40,6 @@ let arr_1 = [3, 5, 22, 5, 7, 2, 45, 75, 89, 21, 2];
 let arr_2 = [9, 2, 42, 55, 71, 22, 4, 5, 90, 25, 26];
 let sumOfFirstArray = 0;
 let sumOfSecondArray = 0;
-
 for (let i = 0; i < arr_1.length; i++) {
   sumOfFirstArray = sumOfFirstArray + arr_1[i];
   console.log(`this is first ${i}number`, arr_1[i]);
@@ -58,6 +54,10 @@ for (let i = 0; i < arr_1.length; i++) {
 // let n1 = 22;
 // Example output:
 // 2 4 6 8 10 12 14 16 18 20 22 OR each item on a new line
+for (let n1 = 2; n1 <= 22; n1 = n1 + 1 ) 
+  {if(n1%2==0) {
+    console.log(n1 + `even`)}
+  }
 
 // Exercise 5
 
@@ -69,26 +69,34 @@ for (let i = 0; i < arr_1.length; i++) {
 // jZvZsZrZpZ OR each letter on a new line
 // HINT: You can use  if((i+1) % 2 == 0) to check for even indexes
 
+let str='javaskript';
+let result=str
+.split('') // array bolgoj bichih komand
+.map((char, index) => (index%2===1 ?'Z' :char)) //array elementig neg negeer shalgaj index-r bairlal todorhoiloh
+.join('');// uurchlult hiisen array-gaa butsaaj negtgen neg txt bolgoh
+  console.log( result);//return
 // Exercise 6
-
 // Check if a string contains the letter “y”. Print “yes” if it does and “no” if it does not.
-
 // let str2 = "don’t know why";
 // Example output:
 // “yes”
-
+let str2 = "don’t know why";
+if(str2.includes('y')){
+  console.log('yes')
+}else{console.log('no');}
 // Exercise 7
-
 // Given a number n Calculate the factorial of the number
-
 // let n2 = 4; //  4 * 3 * 2 * 1 = 24
 // Example output:
 // 24
-
-// */
+let n=4;
+  let fact = 1;
+  for ( i = 1; i <= n; i++) {
+      fact *= i;
+  }
+  console.log(`The factorial of ${n} is ${fact}.`);
 
 // //  Exercise 8
-
 // // Multiplication Tables
 // // Write a for loop that will iterate from 0 to 10. For each iteration of the
 // // for loop, it will multiply the number by 9 and log the result
@@ -96,6 +104,11 @@ for (let i = 0; i < arr_1.length; i++) {
 // // Bonus: Use a nested for loop to show the tables for every multiplier from
 // // 1 to 10 (100 results total).
 
+for (let n1 = 2; n1 <= 10; n1= n1 + 1 ) 
+  {
+    console.log(n1,"*9=",n1*9);
+  console.log(n1,"*10=",n1*10)}
+  
 // // Exercise 9
 
 // // The Grade Assigner
@@ -103,10 +116,16 @@ for (let i = 0; i < arr_1.length; i++) {
 // // by logging every value from 60 to 100: your log should show "For 88, you got a
 // // B. For 89, you got a B. For 90, you got an A. For 91, you got an A.", etc.,
 // // logging each grade point in the range.
+for (let n1 = 60; n1 <= 100; n1= n1 + 1 ) 
+  {if (n1>=60 && n1<70)
+    console.log(n1,"D"); else if(n1>=70 && n1<80)
+  console.log(n1,"C");else if(n1>=80 && n1<90)
+    console.log(n1,"B")}
 
 // // Exercise 10
 
 // //Print Numbers from 1 to 10 Write a loop that prints numbers from 1 to 10.
+
 
 // // Example Output:
 // // 1 2 3 4 5 6 7 8 9 10
