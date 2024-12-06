@@ -54,10 +54,11 @@ for (let i = 0; i < arr_1.length; i++) {
 // let n1 = 22;
 // Example output:
 // 2 4 6 8 10 12 14 16 18 20 22 OR each item on a new line
-for (let n1 = 2; n1 <= 22; n1 = n1 + 1 ) 
-  {if(n1%2==0) {
-    console.log(n1 + `even`)}
+for (let n1 = 2; n1 <= 22; n1 = n1 + 1) {
+  if (n1 % 2 == 0) {
+    console.log(n1 + `even`);
   }
+}
 
 // Exercise 5
 
@@ -69,32 +70,34 @@ for (let n1 = 2; n1 <= 22; n1 = n1 + 1 )
 // jZvZsZrZpZ OR each letter on a new line
 // HINT: You can use  if((i+1) % 2 == 0) to check for even indexes
 
-let str='javaskript';
-let result=str
-.split('') // array bolgoj bichih komand
-.map((char, index) => (index%2===1 ?'Z' :char)) //array elementig neg negeer shalgaj index-r bairlal todorhoiloh
-.join('');// uurchlult hiisen array-gaa butsaaj negtgen neg txt bolgoh
-  console.log( result);//return
+let str = "javaskript";
+let result = str
+  .split("") // array bolgoj bichih komand
+  .map((char, index) => (index % 2 === 1 ? "Z" : char)) //array elementig neg negeer shalgaj index-r bairlal todorhoiloh
+  .join(""); // uurchlult hiisen array-gaa butsaaj negtgen neg txt bolgoh
+console.log(result); //return
 // Exercise 6
 // Check if a string contains the letter “y”. Print “yes” if it does and “no” if it does not.
 // let str2 = "don’t know why";
 // Example output:
 // “yes”
 let str2 = "don’t know why";
-if(str2.includes('y')){
-  console.log('yes')
-}else{console.log('no');}
+if (str2.includes("y")) {
+  console.log("yes");
+} else {
+  console.log("no");
+}
 // Exercise 7
 // Given a number n Calculate the factorial of the number
 // let n2 = 4; //  4 * 3 * 2 * 1 = 24
 // Example output:
 // 24
-let n=4;
-  let fact = 1;
-  for ( i = 1; i <= n; i++) {
-      fact *= i;
-  }
-  console.log(`The factorial of ${n} is ${fact}.`);
+let n = 4;
+let fact = 1;
+for (i = 1; i <= n; i++) {
+  fact *= i;
+}
+console.log(`The factorial of ${n} is ${fact}.`);
 
 // //  Exercise 8
 // // Multiplication Tables
@@ -104,11 +107,15 @@ let n=4;
 // // Bonus: Use a nested for loop to show the tables for every multiplier from
 // // 1 to 10 (100 results total).
 
-for (let n1 = 2; n1 <= 10; n1= n1 + 1 ) 
-  {
-    console.log(n1,"*9=",n1*9);
-  console.log(n1,"*10=",n1*10)}
-  
+for (let n1 = 0; n1 <= 10; n1 = n1 + 1) {
+  let result = n1 * 9;
+  console.log(`${9} * ${n1} = ${result}`);
+  for (let j1 = 0; j1 <= 10; j1 = j1 + 1) {
+    let result = j1 * 10;
+    console.log(`${10} * ${j1} = ${result}`);
+  }
+}
+
 // // Exercise 9
 
 // // The Grade Assigner
@@ -116,16 +123,19 @@ for (let n1 = 2; n1 <= 10; n1= n1 + 1 )
 // // by logging every value from 60 to 100: your log should show "For 88, you got a
 // // B. For 89, you got a B. For 90, you got an A. For 91, you got an A.", etc.,
 // // logging each grade point in the range.
-for (let n1 = 60; n1 <= 100; n1= n1 + 1 ) 
-  {if (n1>=60 && n1<70)
-    console.log(n1,"D"); else if(n1>=70 && n1<80)
-  console.log(n1,"C");else if(n1>=80 && n1<90)
-    console.log(n1,"B")}
+for (let n1 = 60; n1 <= 100; n1 = n1 + 1) {
+  if (n1 >= 60 && n1 < 70) console.log(`${n1},"D"`);
+  else if (n1 >= 70 && n1 < 80) console.log(`${n1},"C"`);
+  else if (n1 >= 80 && n1 < 90) console.log(`${n1},"B"`);
+  else if (n1 >= 90 && n1 <= 100) console.log(`${n1},"A"`);
+}
 
 // // Exercise 10
 
 // //Print Numbers from 1 to 10 Write a loop that prints numbers from 1 to 10.
-
+for (let n = 0; n <= 10; n++) {
+  console.log(n);
+}
 
 // // Example Output:
 // // 1 2 3 4 5 6 7 8 9 10
@@ -133,6 +143,12 @@ for (let n1 = 60; n1 <= 100; n1= n1 + 1 )
 // // Exercise 11
 
 // // Sum of Numbers from 1 to 20 Write a loop to calculate the sum of numbers from 1 to 20.
+let s = 20;
+let fct = 1;
+for (s = 1; i <= s; s++) {
+  fact *= s;
+  console.log(`The factorial of ${n} is ${fact}.`);
+}
 
 // // Example Output:
 // // The sum is 210
