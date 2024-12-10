@@ -143,7 +143,7 @@
 
 // // // Sum of Numbers from 1 to 20 Write a loop to calculate the sum of numbers from 1 to 20
 
-// let sum= 0; 
+// let sum= 0;
 
 // for (let i = 0; i <= 20; i++){
 //   sum +=  i;
@@ -156,7 +156,7 @@
 // // // let str = "hello world";
 // // // Example Output:
 // // // Number of vowels: 3
-// function countVowel(str) { 
+// function countVowel(str) {
 //   // find the count of vowels
 //   let count = str.match(/[aeiou]/gi).length;
 //   // return number of vowels
@@ -201,7 +201,7 @@
 //  let s="javascript";
 //  let sa1=s
 //  .split("")// (txt- salgaj neg neger ni bichig)
-//  . reverse(s) 
+//  . reverse(s)
 //   .join(""); // uurchlult hiisen array-gaa butsaaj negtgen neg txt bolgoh
 //  console.log(sa1)
 // // // Exercise 16
@@ -252,18 +252,19 @@
 // let divisors=true
 // for(let i=0;i<=l;i++)   if (l % i == 0) {
 //   divisors = true;
-// if (divisors) 
+// if (divisors)
 // console.log(`${i} is divisors`);}
 // // // Exercise 22
 // // // Check Palindrome Write a loop to check if a string is a palindrome.
-// // // let str = "radar";
-// // // Example Output:
-// // // radar is a palindrome
-// let check= 'radar';
-// let c = 'radar'
-// if (check.match(c))
-// console.log(`this is Palindrome`);else
-// {console.log("this is't palindrome")}
+// // let str = "radar";
+// // Example Output:
+// // radar is a palindrome
+let check = "radar";
+let c = "radar";
+if (check.match(c)) console.log(`this is Palindrome`);
+else {
+  console.log("this is't palindrome");
+}
 // // // Exercise 23
 // // // Count Words in a Sentence Write a loop to count the number of words in a sentence.
 // // // let sentence = "Loops are fun to learn";
@@ -337,7 +338,6 @@
 // }
 //   console.log(`sum ni ${sm}`)
 
-
 // // // Exercise 28
 
 // // // Remove Duplicates from an Array Write a loop to remove duplicate elements from an array.
@@ -348,10 +348,10 @@
 // let arr3 = [1, 2, 3, 2, 1, 4];
 // let rt = [...new Set (arr3)]; //new Set ni davhardsan utgig arilgadag.
 // console.log(rt);
-// // second 
+// // second
 // let ars3 = [1, 2, 3, 2, 1, 4];
 // let uq=[];
-// for(let i=0;i<ars3.length;i++){if 
+// for(let i=0;i<ars3.length;i++){if
 //   (!uq.includes(ars3[i]))// include([i]) shalgah
 //   {uq.push(ars3[i]);}}//.push([i])bol davhardlig arilgah
 // console.log(`loop ashiglan bodoh; uq`)
@@ -412,9 +412,9 @@
 // smp += too[i];
 //   } console.log (`sum ni ${smp}`)
 // // 2. Монгол улсын иргэний бүртгэлийн дугаар болох регистрийн дугаар нь 10 оронтой эхний 2 орон нь үсэг үлдсэн нь тоо байдаг билээ.
-// //    Тэгвэл хэрвээ хэрэглэгч гараас 10 тэмдэгт оруулахад эхлээд тухайн оруулсан утганы урт нь 10 байгаа эсэх дараа нь эхний 
+// //    Тэгвэл хэрвээ хэрэглэгч гараас 10 тэмдэгт оруулахад эхлээд тухайн оруулсан утганы урт нь 10 байгаа эсэх дараа нь эхний
 // //2 орон нь зөвхөн үсэг эсэх хамгийн эцэст нь үлдсэн 8 тэмдэгт нь бүхэлдээ тоо эсэхийг шалгана уу.
-//  //Хэрвээ энэ бүх нөхцлүүд биелж байвал та монгол улсын регистрийн дугаарыг зөв орууллаа гэж харуулна уу. 
+//  //Хэрвээ энэ бүх нөхцлүүд биелж байвал та монгол улсын регистрийн дугаарыг зөв орууллаа гэж харуулна уу.
 //  //Хэрвээ аль нэг нөхцөл нь буруу байвал та монгол улсын иргэний бүртгэлийн дугаарыг буруу орууллаа гэж харуулна уу.
 
 // //  let input=prompt("Regitriin dugaaraa oruulna uu");
@@ -438,14 +438,14 @@
 //   let spaces= " ".repeat(ro-i);
 //   let stars= "*".repeat (2*i-1);
 //   console.log(spaces+stars);
-// } 
+// }
 // // 4. While loop ашиглан 0-100 хүртэлх тооны бүх тэгш тоог олох.
 // for(i=0;i<=100;i++){if(i%2==0)
 //   console.log(`even is`,i)}
 // // 5. Анх нэг тоо хадгалаад дараа нь Prompt ашиглан 1 утга аваад тэр тоог таах хүртэл зогсолтгүй ажиллах loop бичээрэй.
 // // let target= Math.floor(Math.random()*100)+1;//math.random0-1 hoorond butarhai too uusgene(*100) 0-100 hoorond bolgon huvirgana.
 // // //marth.floor butarhaig buhel too bolgon huvirgana +1;toog 0-100 hoorond uusgeh
-// // let guess=null;//hereglegchin taasan too 
+// // let guess=null;//hereglegchin taasan too
 // // while (guess !==target){ //while gedeg ni hereglegch toog oloh hurtel urgeljilne. guess!==target number:hereglegchin oruulsan too zov bh hurtel urgeljilne.
 // //   guess=parseInt(prompt("ta 0-100 hoorond too taagarai"))} //parseInt ;promt ni text(string)bolgon butsaadag tul oruulsan utga buhel too boltol urgeljilne.
 // //   //hereglegchin utgig shalgah;
@@ -482,11 +482,11 @@
 // let as= 5;  //parseInt ni txt-n ehend bga utgiig toon utga bolgon ugdug.
 // //parseInt(string,radix)=> string ni txt-n ehend bga toog l too bolgono.radix;toog ymar toollin systemd horvuulehig zaana.
 // //hervee console.log(number(abc123));gevel buh utgig too bolgohiig zaadag. (Nan butsan)
-// //hervee console.log(parseInt(123abc)) bvl 123 butsana 
+// //hervee console.log(parseInt(123abc)) bvl 123 butsana
 // let squire ="";
 // for(i=1; i<as;i++){
 // for(let i=1; j<as ; i++)
-//   {squire+="*";}//tuhain morond *bichne 
+//   {squire+="*";}//tuhain morond *bichne
 // squire+="\n";}// mor buriin daraa shine mor nemeh "\n"
 // console.log(squire)
 
@@ -494,28 +494,68 @@
 //    Example1 : input: 111, output: true
 //    Example2 : input: 110, output: false
 //    Example3 : input: 101, output: true
-//    https://en.wikipedia.org/wiki/Palindromic_number
+// let pal=111
+// let chec=0;
+// if(pal===chec){console.log('this is palindrome')}
+
 // 9. Заавар: n! - n факториал гэж уншина. Энэ нь 1,2,3,…,n тоонуудын үржвэр байна
 //    n!=1⋅2⋅3⋅⋯⋅n
-let la=[1,2,3,4,5];
-let sim=1;
-for(i=1;i<la.length;i++){
+let la = [1, 2, 3, 4, 5];
+let sim = 1;
+for (i = 1; i < la.length; i++) {
   sim *= la[i];
-}console.log(sim);
- 
+}
+console.log(sim);
+
 //    5! = 120 / 1*2*3*4*5/
- 
+
 //    Бодлого :
 //    prompt - оор гараас тоо авч тэр тооныхоо факториалыг олох.
- 
 // 10. example 1: input = "Hello World", output = "hELLO wORLD"
-let  input = "Hello World";
-
+let input = "Hello World";
+let output = swapCase(input);
+function swapCase(input) {
+  let result = "";
+  for (let char of input) {
+    if (char === char.toUpperCase()) {
+      result += char.toLowerCase();
+    } else {
+      result += char.toUpperCase();
+    }
+  }
+  return result;
+}
+console.log(output);
 //     example 2: input = "This Is STRING!", output = "tHIS iS string!"
+
+let inp = "This Is STRING!";
+let outp = swapCase(inp);
+function swapCase(inp) {
+  let result = "";
+  for (let char of inp) {
+    if (char === char.toUpperCase()) {
+      result += char.toLowerCase();
+    } else {
+      result += char.toUpperCase();
+    }
+  }
+  return result;
+}
+console.log(outp);
 // 11. Prompt - оор тоо авна. 1 ээс promp оор авсан тоо хүртэлх нийлбэрийг ол. example: input = 10 1+2+3+4+5+6+7+8+9+10 = 55;
+let p = 10;
+let sp = 0;
+for (i = 1; i <= p; i++) {
+  sp += i;
+}
+console.log(sp);
 // 12. 3-аас дээш оронтой тоо зарлаад тухайн тоогоо тонгоргож харуулна уу. Жишээ нв Ийм утга 12345 -> 54321.
+let nj = [1, 2, 3, 4, 5];
+let unisort = [...new Set(nj)].sort((a, b) => b - a);
+console.log(unisort);
+
 // 13. Өгөгдсөн тоо хүртлэх цифрүүдийг зайгаар тусгаарлан хэвлээрэй. Жишээ нь:
-//     Input: 4  
+//     Input: 4
 //     Output: 0 1 2 3
 // 14. Бүхэл тоо өгөгдөнө. Жишээн дээрхтэй төстэй тоон хэлбэрийг үүсгэ.
 //     Input: 5
@@ -529,6 +569,3 @@ let  input = "Hello World";
 //     - 5 4 3
 //     - 5 4
 //     - 5
- 
-// Palindromic number
-// A palindromic number (also known as a numeral palindrome or a numeric palindrome) is a number (such as 16461) that remains the same when its digits are
